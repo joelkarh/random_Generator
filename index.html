@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="author" name="Joël Karhamba">
+    <meta content="vue-todo" name="description">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <title>Random user generator </title>
+</head>
+<body>
+<div id="app">
+    <img :class="gender" :src="picture" :alt="`firstName ${lastName}` ">
+    <h1>{{firstName}} {{lastName}}</h1>
+    <h3>Email: {{email}}</h3>
+    <button :class="gender" @click="getUser">Get Random user</button>
+
+</div>
+
+<script src="js/app/app.js"></script>
+</body>
